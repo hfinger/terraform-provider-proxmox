@@ -3,7 +3,7 @@ module github.com/Telmate/terraform-provider-proxmox
 go 1.16
 
 require (
-	github.com/Telmate/proxmox-api-go v0.0.0-20211022153530-57ee1e4bd869
+	github.com/Telmate/proxmox-api-go v0.0.0-20211022153530-57ee1e4bd869 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
@@ -14,6 +14,7 @@ require (
 	github.com/hashicorp/hcl/v2 v2.10.1 // indirect
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.8.0
 	github.com/hashicorp/yamux v0.0.0-20210826001029-26ff87cf9493 // indirect
+	github.com/hfinger/proxmox-api-go v0.0.0-20211023203105-d2137b30f9e2 // indirect
 	github.com/mattn/go-colorable v0.1.11 // indirect
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect

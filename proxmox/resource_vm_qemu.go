@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	pxapi "github.com/Telmate/proxmox-api-go/proxmox"
+	pxapi "github.com/hfinger/proxmox-api-go/proxmox"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
 )
@@ -944,7 +944,7 @@ func resourceVmQemuUpdate(d *schema.ResourceData, meta interface{}) error {
 
 	d.Partial(true)
 	if d.HasChange("target_node") {
-		_, err := client.MigrateNode(vmr, d.Get("target_node").(string), true)
+		_, err := client.MigrateNode(vmr, d.Get("target_node").(string), true, true)
 		if err != nil {
 			return err
 		}
